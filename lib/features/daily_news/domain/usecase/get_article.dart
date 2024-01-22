@@ -12,6 +12,7 @@ class GetArticleUseCase implements UseCase<DataState<List<ArticleEntity>>, void>
   Future<DataState<List<ArticleEntity>>> call({void params}) {
     // TODO: implement call
     //throw UnimplementedError();
+    print(_articleRepository.getNewsArticles().toString());
     return _articleRepository.getNewsArticles();
   }
 
